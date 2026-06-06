@@ -1,0 +1,4 @@
+include: package:flutter_lints/flutter.yaml
+
+# Custom rules removed to avoid unrecognized/removed lints on Dart 3.
+# Keep the default flutter lints and enable/disable specific rules as needed.

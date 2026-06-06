@@ -1,0 +1,71 @@
+name: plant_care
+description: "An offline plant care tracker mobile application built with Flutter and Clean Architecture."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Material Design 3
+  material_color_utilities: ^0.13.0
+
+  # State Management
+  riverpod: ^2.4.0
+  flutter_riverpod: ^2.4.0
+  riverpod_annotation: ^2.3.0
+
+  # Navigation
+  go_router: ^14.0.0
+
+  # Database
+  drift: ^2.14.0
+  sqlite3_flutter_libs: ^0.5.0
+  path: ^1.8.0
+  path_provider: ^2.1.0
+  image_picker: ^0.8.7+5
+
+  # Models & Serialization
+  freezed_annotation: ^2.4.1
+  json_annotation: ^4.8.1
+
+  # Local Notifications
+  flutter_local_notifications: ^17.0.0
+  timezone: ^0.9.0
+
+  # Charting & Analytics
+  fl_chart: ^0.67.0
+
+  # Logging
+  logger: ^2.0.0
+
+  # Utils
+  intl: ^0.19.0
+  uuid: ^4.0.0
+  cupertino_icons: ^1.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^3.0.0
+  build_runner: ^2.4.0
+  freezed: ^2.4.1
+  json_serializable: ^6.7.0
+  drift_dev: ^2.14.0
+  riverpod_generator: ^2.3.0
+
+  # Testing
+  mockito: ^5.4.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/icons/
+    - assets/images/
+  # fonts: (disabled) - add real font files under assets/fonts/ if needed

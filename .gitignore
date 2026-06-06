@@ -1,0 +1,113 @@
+# Flutter and Dart SDK
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+build/
+*.iml
+
+# Android
+android/.gradle/
+android/local.properties
+android/key.properties
+android/.android/
+android/app/debug/
+android/app/profile/
+android/app/release/
+.android/
+
+# iOS
+ios/Flutter/Flutter.podspec
+ios/Flutter/Flutter.framework
+ios/Flutter/Flutter.xcframework
+ios/Flutter/.last_build_id
+ios/.symlinks/
+ios/.dart_tool/
+ios/Flutter/flutter_export_environment.sh
+ios/Pods/
+ios/Runner.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
+ios/.generated.xcconfig
+ios/Runner/GeneratedPluginRegistrant.*
+ios/.generated/
+ios/Runner.xcworkspace
+ios/Podfile.lock
+
+# Web
+web/packages/
+web/plugins/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+*.sublime-project
+*.sublime-workspace
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+.vscode/launch.json
+
+# CI
+.github/workflows/*/cache
+
+# Production
+release/
+dist/
+
+# Testing
+coverage/
+.coverage/
+.test-cache/
+
+# Logs
+*.log
+
+# Temporary files
+.temp/
+tmp/
+temp/
+*.tmp
+
+# Database (local development only)
+*.db
+*.db-journal
+
+# Backup files
+*.bak
+*.backup
+*~
+
+# OS
+Thumbs.db
+Desktop.ini
+.AppleDouble
+.LSOverride
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Miscellaneous
+*.class
+*.lock
+*.log
+*.swp
+*.swo
+*~
+.DS_Store
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+build/
+windows/flutter/generated_plugins.cmake
+windows/flutter/generated_plugins.cmake
