@@ -77,7 +77,7 @@ class _PlantDetailScreenState extends State<PlantDetailScreen> {
           title: Row(
             children: [
               CircleAvatar(
-                backgroundColor: color.withValues(alpha: 0.15),
+                backgroundColor: color.withOpacity(0.15),
                 child: Icon(icon, color: color, size: 20),
               ),
               const SizedBox(width: 12),
@@ -334,7 +334,7 @@ class _PlantDetailScreenState extends State<PlantDetailScreen> {
                       child: Icon(
                         Icons.spa_rounded,
                         size: 250,
-                        color: Colors.white.withValues(alpha: 0.06),
+                        color: Colors.white.withOpacity(0.06),
                       ),
                     ),
                     // Plant info overlay
@@ -349,9 +349,9 @@ class _PlantDetailScreenState extends State<PlantDetailScreen> {
                             width: 72,
                             height: 72,
                             decoration: BoxDecoration(
-                              color: Colors.white.withValues(alpha: 0.15),
+                              color: Colors.white.withOpacity(0.15),
                               shape: BoxShape.circle,
-                              border: Border.all(color: Colors.white.withValues(alpha: 0.3), width: 1.5),
+                              border: Border.all(color: Colors.white.withOpacity(0.3), width: 1.5),
                             ),
                             child: _buildPlantAvatar(),
                           ),
@@ -368,7 +368,7 @@ class _PlantDetailScreenState extends State<PlantDetailScreen> {
                           Text(
                             _plant['species'] ?? '',
                             style: TextStyle(
-                              color: Colors.white.withValues(alpha: 0.7),
+                              color: Colors.white.withOpacity(0.7),
                               fontSize: 14,
                               fontStyle: FontStyle.italic,
                             ),
@@ -406,7 +406,7 @@ class _PlantDetailScreenState extends State<PlantDetailScreen> {
                       decoration: BoxDecoration(
                         gradient: LinearGradient(
                           colors: [
-                            Colors.blue.withValues(alpha: 0.08),
+                            Colors.blue.withOpacity(0.08),
                             Theme.of(context).colorScheme.surface,
                           ],
                           begin: Alignment.topLeft,
@@ -545,7 +545,7 @@ class _PlantDetailScreenState extends State<PlantDetailScreen> {
                                         color: entry['color'] as Color,
                                         boxShadow: [
                                           BoxShadow(
-                                            color: (entry['color'] as Color).withValues(alpha: 0.4),
+                                            color: (entry['color'] as Color).withOpacity(0.4),
                                             blurRadius: 6,
                                           ),
                                         ],
@@ -658,9 +658,9 @@ class _PlantDetailScreenState extends State<PlantDetailScreen> {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
       decoration: BoxDecoration(
-        color: color.withValues(alpha: 0.1),
+        color: color.withOpacity(0.1),
         borderRadius: BorderRadius.circular(20),
-        border: Border.all(color: color.withValues(alpha: 0.3)),
+        border: Border.all(color: color.withOpacity(0.3)),
       ),
       child: Row(
         mainAxisSize: MainAxisSize.min,
@@ -679,7 +679,7 @@ class _PlantDetailScreenState extends State<PlantDetailScreen> {
   Widget _buildCareButton(String label, IconData icon, Color color) {
     return Expanded(
       child: Material(
-        color: color.withValues(alpha: 0.1),
+        color: color.withOpacity(0.1),
         borderRadius: BorderRadius.circular(12),
         child: InkWell(
           onTap: () => _logCareAction(label, icon, color),

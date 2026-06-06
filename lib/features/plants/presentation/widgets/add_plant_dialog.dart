@@ -77,7 +77,7 @@ class _AddPlantDialogState extends State<AddPlantDialog> {
                       width: 48,
                       height: 48,
                       decoration: BoxDecoration(
-                        color: const Color(0xFF2E7D32).withValues(alpha: 0.12),
+                        color: const Color(0xFF2E7D32).withOpacity(0.12),
                         shape: BoxShape.circle,
                       ),
                       child: const Icon(

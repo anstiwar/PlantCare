@@ -9,6 +9,10 @@ class PlantsTable extends Table {
   TextColumn get species => text().nullable()();
   TextColumn get location => text().nullable()();
   TextColumn get category => text().nullable()();
+  RealColumn get wateringProgress => real().withDefault(const Constant(1.0))();
+  TextColumn get nextWatering => text().withDefault(const Constant('7 days left'))();
+  TextColumn get healthStatus => text().withDefault(const Constant('Excellent'))();
+  IntColumn get wateringInterval => integer().withDefault(const Constant(7))();
   DateTimeColumn get dateAdded => dateTime()();
   TextColumn get notes => text().nullable()();
   BoolColumn get isArchived => boolean().withDefault(const Constant(false))();
